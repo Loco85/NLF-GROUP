@@ -1,0 +1,741 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+		title NLF Group
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/animate.min.css")
+		link(rel="stylesheet", href="owl.carousel/dist/assets/owl.carousel.min.css")
+		link(rel="stylesheet", href="css/bootstrap-slider.min.css")
+	body
+		//- HEADER SECTION
+		section.header-section
+			div.container
+				div.header-section__nav.row.flex-column.flex-lg-row.flex-xl-row.align-items-center.justify-content-between
+					div.header-section__logo.col-lg-3.d-flex.flex-column.align-items-center.align-items-lg-start.align-items-xl-start.justify-content-between
+						div
+							img(src="img/header-logo.png", alt="")
+						div
+							p Покупка долговых обязательств юридических лиц
+					div.header-section__links.d-flex.align-items-center.justify-content-between
+						div
+							a(href="#") Главный сайт
+						div
+							a(href="#") Фейсбук
+					div.header-section__phone.d-flex.align-items-center.justify-content-between
+						div
+							a(href="tel:+74953692244") +7 495 369-22-44
+					div.header-section__btn.col-lg-4.d-flex.align-items-center.justify-content-end
+						div
+							button.btn.btn-block.btn-secondary(data-toggle="modal", data-target="#emailModal") Рассчитать стоимость долга
+				div.header-section__block.row
+					div.col-lg-8
+						div.header-section__info-caption
+							h1 Осуществляем выкуп долговых обязательств юридических и физических лиц до <span>90%</span> от номинала долга. 
+							p Вы получаете ваши деньги в течение 3 дней с момента заключения договора цессии с нами, что исключает необходимость судиться с должником.
+						div.header-section__video.d-flex.justify-content-center
+							div.owl-carousel.header-section__video-carousel
+								div
+									div.card.justify-content-center.align-items-center
+										div.embed-responsive.embed-responsive-16by9
+											iframe.embed-responsive-item(src="",data-src="https://youtube.com/embed/yAasi2ciSbs?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white", frameborder="0", allowfullscreen)
+											div.header-section__poster
+												img(src="posters/video-poster-1.png", alt="")
+											div.header-section__video-play
+								div
+									div.card.justify-content-center.align-items-center
+										div.embed-responsive.embed-responsive-16by9
+											iframe.embed-responsive-item(src="",data-src="https://youtube.com/embed/XT83AAPMxXQ?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white", frameborder="0", allowfullscreen)
+											div.header-section__poster
+												img(src="posters/video-poster-2.png", alt="")
+											div.header-section__video-play
+								div
+									div.card.justify-content-center.align-items-center
+										div.embed-responsive.embed-responsive-16by9
+											iframe.embed-responsive-item(src="",data-src="https://youtube.com/embed/nOa2SfGXR7g?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white", frameborder="0", allowfullscreen)
+											div.header-section__poster
+												img(src="posters/video-poster-3.png", alt="")
+											div.header-section__video-play
+					div.col-lg-4.d-flex.flex-column.justify-content-center
+						div.header-section__form
+							div.d-flex.justify-content-start
+								div.header-section__form-arrow-down
+							div.header-section__form-text
+								p Оставьте заявку, с вами свяжется представитель компании и рассчитает точную стоимость в течение 24 часов
+							div
+								form(method="post", action="")
+									div.form-group
+										input.form-control(type="text", name="name", placeholder="*Имя")
+									div.form-group
+										input.form-control(type="tel", name="phone", placeholder="*Номер телефона", required)
+										input(type="hidden", name="subject", value="Заявка")
+									div.form-group
+										button(type="submit").btn.btn-block.btn-secondary Отправить
+									div.header-section__form-agree
+										p *Нажимая на кнопку, я соглашаюсь с Политикой конфиденциальности
+		//- HEADER SECTION
+
+		//- HOW IT WORK SECTION
+		section.how-it-work-section
+			div.container
+				div.how-it-work-section__caption.d-flex.flex-column.justify-content-center.align-items-center
+					div
+						h2
+							span Как это работает
+				div.how-it-work-section__cards.row 
+					div.col-lg-4.how-it-work-section__card
+						div.card
+							div.card-body
+								div.d-flex.justify-content-start
+									div.how-it-work-section__cards-number 1
+								div.how-it-work-section__cards-title.d-flex.justify-content-between.align-items-center
+									div
+										h5 Подача заявки
+									div
+										img.img-fluid(src="img/document-pencil-icon.png", alt="")
+								div.how-it-work-section__cards-text
+									p Подавая заявку, помните: мы не будем инвестировать в вашу ситуацию, будучи недостаточно осведомленными. Поделитесь с нами информацией и документами, которые вы предоставили бы суду, и мы поможем
+					div.col-lg-4.how-it-work-section__card
+						div.card
+							div.card-body
+								div.d-flex.justify-content-start
+									div.how-it-work-section__cards-number 2
+								div.how-it-work-section__cards-title.d-flex.justify-content-between.align-items-center
+									div
+										h5 Анализ заявки
+									div
+										img.img-fluid(src="img/document-clock-icon.png", alt="")
+								div.how-it-work-section__cards-text
+									p Наша команда проводит полную проверку вашей заявки с точки зрения правовой позиции, сложности спора, фактической возможности исполнения и имущественного положения должника/ответчика
+					div.col-lg-4.how-it-work-section__card
+						div.card
+							div.card-body
+								div.d-flex.justify-content-start
+									div.how-it-work-section__cards-number 3
+								div.how-it-work-section__cards-title.d-flex.justify-content-between.align-items-center
+									div
+										h5 Принятие решения
+									div
+										img.img-fluid(src="img/document-medal-icon.png", alt="")
+								div.how-it-work-section__cards-text
+									p В случае положительного решения, мы направим вам письмо о намерениях, содержащее ключевые условия приобретения вашего права требования
+				div.how-it-work-section__feedback.row.flex-column.flex-lg-row.flex-xl-row.justify-content-center.align-items-center
+					div.col-lg-6.d-flex.justify-content-center.justify-content-lg-end.justify-content-xl-end
+						div.col-lg-8
+							a(href="#").btn.btn-block.btn-secondary(data-toggle="modal", data-target="#feedbackModal") Оставить заявку
+					div.col-lg-6.d-flex.justify-content-center.justify-content-lg-start.justify-content-xl-start
+						div
+							a(href="#", data-toggle="modal", data-target="#callModal").how-it-work-section__feedback-link Заказать обратный звонок
+		//- HOW IT WORK SECTION
+
+		//- SUCCESSFUL BID SECTION
+		section.successful-bid-section
+			div.container
+				div.successful-bid-section__caption.d-flex.flex-column.justify-content-center.align-items-center
+					div
+						h2
+							span Критерии успешной заявки
+				div.successful-bid-section__cards.row
+					div.col-lg-4.successful-bid-section__card
+						div.card
+							div.card-body.d-flex.flex-column.justify-content-between
+								div.flex-grow-1.successful-bid-section__card-img
+									img.img-fluid(src="img/envelope-icon.png", alt="")
+								div.flex-grow-1
+									div.successful-bid-section__cards-title
+										h5 Наличие всех документов, подтверждающих реальность предлагаемого нам права требования
+									div.successful-bid-section__cards-text
+										p
+					div.col-lg-4.successful-bid-section__card
+						div.card
+							div.card-body.d-flex.flex-column.justify-content-between
+								div.flex-grow-1.successful-bid-section__card-img
+									img.img-fluid(src="img/crown-icon.png", alt="")
+								div.flex-grow-1
+									div.successful-bid-section__cards-title
+										h5 Экономическая целесообразность 
+									div.successful-bid-section__cards-text
+										p сумма приобретаемого права требования должна быть не менее 3 млн.рублей
+					div.col-lg-4.successful-bid-section__card
+						div.card
+							div.card-body.d-flex.flex-column.justify-content-between
+								div.flex-grow-1.successful-bid-section__card-img
+									img.img-fluid(src="img/protection-icon.png", alt="")
+								div.flex-grow-1
+									div.successful-bid-section__cards-title
+										h5 Возможность фактического исполнения решения и платежеспособность должника/ответчика 
+									div.successful-bid-section__cards-text
+										p мы не приобретаем права требования к компаниям банкротам и фирмам-однодневкам
+				div.successful-bid-section__feedback.row.flex-column.flex-lg-row.flex-xl-row.justify-content-center.align-items-center
+					div.col-lg-6.d-flex.justify-content-center.justify-content-lg-end.justify-content-xl-end
+						div.col-lg-8
+							a(href="#").btn.btn-block.btn-secondary(data-toggle="modal", data-target="#feedbackModal") Оставить заявку
+					div.col-lg-6.d-flex.justify-content-center.justify-content-lg-start.justify-content-xl-start
+						div
+							a(href="#", data-toggle="modal", data-target="#callModal").successful-bid-section__feedback-link Заказать обратный звонок
+		//- SUCCESSFUL BID SECTION
+
+		//- SALE OF DEBT SECTION
+		section.sale-of-debt-section
+			div.container
+				div.sale-of-debt-section__caption.d-flex.justify-content-center
+					div
+						h2 Продажа долга — наиболее быстрый <br>и удобный способ получить деньги 
+				div.sale-of-debt-section__statistics
+					div.row
+						div.col-md-6.d-flex.justify-content-center.justify-content-md-end.justify-content-lg-end.justify-content-xl-end
+							div.sale-of-debt-section__statistics-title-white.d-flex.flex-sm-row.flex-column.align-items-center.justify-content-center
+								div.sale-of-debt-section__smile-icon
+								div
+									h5 Продажа долга
+						div.col-md-6.d-flex.justify-content-center.justify-content-md-start.justify-content-lg-start.justify-content-xl-start
+							div.sale-of-debt-section__statistics-title-yellow.d-flex.flex-sm-row.flex-column.align-items-center.justify-content-center
+								div.sale-of-debt-section__sadness-icon
+								div
+									h5 Самостоятельное взыскание
+					div.row
+						div.col-lg-3.col-md-3.col-6.offset-3.offset-lg-0.offset-md-0
+							div.d-flex.sale-of-debt-section__statistics-block
+								div.d-flex.flex-column.justify-content-between.sale-of-debt-section__statistics-column
+									div.sale-of-debt-section__statistics-word_white Скор
+									div.sale-of-debt-section__statistics-level_white.sale-of-debt-section__statistics-level_60-percent
+								div.d-flex.flex-column.justify-content-between.sale-of-debt-section__statistics-column
+									div.sale-of-debt-section__statistics-word_yellow ость
+									div.sale-of-debt-section__statistics-level_yellow.sale-of-debt-section__statistics-level_20-percent
+						div.col-lg-3.col-md-3.col-6.offset-3.offset-lg-0.offset-md-0
+							div.d-flex.sale-of-debt-section__statistics-block
+								div.d-flex.flex-column.justify-content-between.sale-of-debt-section__statistics-column
+									div.sale-of-debt-section__statistics-word_white Це
+									div.sale-of-debt-section__statistics-level_white.sale-of-debt-section__statistics-level_20-percent
+								div.d-flex.flex-column.justify-content-between.sale-of-debt-section__statistics-column
+									div.sale-of-debt-section__statistics-word_yellow на
+									div.sale-of-debt-section__statistics-level_yellow.sale-of-debt-section__statistics-level_100-percent
+						div.col-lg-3.col-md-3.col-6.offset-3.offset-lg-0.offset-md-0
+							div.d-flex.sale-of-debt-section__statistics-block
+								div.d-flex.flex-column.justify-content-between.sale-of-debt-section__statistics-column
+									div.sale-of-debt-section__statistics-word_white Ри
+									div.sale-of-debt-section__statistics-level_white.sale-of-debt-section__statistics-level_40-percent
+								div.d-flex.flex-column.justify-content-between.sale-of-debt-section__statistics-column
+									div.sale-of-debt-section__statistics-word_yellow ск
+									div.sale-of-debt-section__statistics-level_yellow.sale-of-debt-section__statistics-level_60-percent
+						div.col-lg-3.col-md-3.col-6.offset-3.offset-lg-0.offset-md-0
+							div.d-flex.sale-of-debt-section__statistics-block
+								div.d-flex.flex-column.justify-content-between.sale-of-debt-section__statistics-column
+									div.sale-of-debt-section__statistics-word_white Нер
+									div.sale-of-debt-section__statistics-level_white.sale-of-debt-section__statistics-level_20-percent
+								div.d-flex.flex-column.justify-content-between.sale-of-debt-section__statistics-column
+									div.sale-of-debt-section__statistics-word_yellow вы
+									div.sale-of-debt-section__statistics-level_yellow.sale-of-debt-section__statistics-level_60-percent
+					//- div.row
+					//- 	div.col-12
+					//- 		div.sale-of-debt-section__statistics-name
+					//- 			p Скорость
+					//- 	div.col-md-6
+					//- 		div.d-flex.justify-content-center.justify-content-md-end.justify-content-lg-end.justify-content-xl-end
+					//- 			div.sale-of-debt-section__statistics-p-block-yellow.sale-of-debt-section__statistics-p-block-77-percent
+					//- 				span 77%
+					//- 	div.col-md-6
+					//- 		div.d-flex.justify-content-center.justify-content-md-start.justify-content-lg-start.justify-content-xl-start
+					//- 			div.sale-of-debt-section__statistics-p-block-white.sale-of-debt-section__statistics-p-block-23-percent
+					//- 				span 23%
+					//- div.row
+					//- 	div.col-12
+					//- 		div.sale-of-debt-section__statistics-name
+					//- 			p Цена
+					//- 	div.col-md-6
+					//- 		div.d-flex.justify-content-center.justify-content-md-end.justify-content-lg-end.justify-content-xl-end
+					//- 			div.sale-of-debt-section__statistics-p-block-yellow.sale-of-debt-section__statistics-p-block-18-percent
+					//- 				span 18%
+					//- 	div.col-md-6
+					//- 		div.d-flex.justify-content-center.justify-content-md-start.justify-content-lg-start.justify-content-xl-start
+					//- 			div.sale-of-debt-section__statistics-p-block-white.sale-of-debt-section__statistics-p-block-82-percent
+					//- 				span 82%
+					//- div.row
+					//- 	div.col-12
+					//- 		div.sale-of-debt-section__statistics-name
+					//- 			p Риск
+					//- 	div.col-md-6
+					//- 		div.d-flex.justify-content-center.justify-content-md-end.justify-content-lg-end.justify-content-xl-end
+					//- 			div.sale-of-debt-section__statistics-p-block-yellow.sale-of-debt-section__statistics-p-block-35-percent
+					//- 				span 35%
+					//- 	div.col-md-6
+					//- 		div.d-flex.justify-content-center.justify-content-md-start.justify-content-lg-start.justify-content-xl-start
+					//- 			div.sale-of-debt-section__statistics-p-block-white.sale-of-debt-section__statistics-p-block-65-percent
+					//- 				span 65%
+					//- div.row
+					//- 	div.col-12
+					//- 		div.sale-of-debt-section__statistics-name
+					//- 			p Нервы
+					//- 	div.col-md-6
+					//- 		div.d-flex.justify-content-center.justify-content-md-end.justify-content-lg-end.justify-content-xl-end
+					//- 			div.sale-of-debt-section__statistics-p-block-yellow.sale-of-debt-section__statistics-p-block-26-percent
+					//- 				span 26%
+					//- 	div.col-md-6
+					//- 		div.d-flex.justify-content-center.justify-content-md-start.justify-content-lg-start.justify-content-xl-start
+					//- 			div.sale-of-debt-section__statistics-p-block-white.sale-of-debt-section__statistics-p-block-74-percent
+					//- 				span 74%
+
+				//- div.sale-of-debt-section__lists.row
+				//- 	div.col-lg-3.col-sm-6
+				//- 		ul.list-unstyled.sale-of-debt-section__list-plus-yellow
+				//- 			li быстрое рассмотрение
+				//- 			li небольшие затраты
+				//- 			li гарантия результата
+				//- 			li свободное время
+				//- 	div.col-lg-3.col-sm-6
+				//- 		ul.list-unstyled.sale-of-debt-section__list-minus-yellow
+				//- 			li быстрое рассмотрение
+				//- 			li небольшие затраты
+				//- 			li гарантия результата
+				//- 			li свободное время
+				//- 	div.col-lg-3.col-sm-6
+				//- 		ul.list-unstyled.sale-of-debt-section__list-plus-grey
+				//- 			li быстрое рассмотрение
+				//- 			li небольшие затраты
+				//- 			li гарантия результата
+				//- 			li свободное время
+				//- 	div.col-lg-3.col-sm-6
+				//- 		ul.list-unstyled.sale-of-debt-section__list-minus-grey
+				//- 			li быстрое рассмотрение
+				//- 			li небольшие затраты
+				//- 			li гарантия результата
+				//- 			li свободное время
+				div.sale-of-debt-section__caption.d-flex.justify-content-center
+					div
+						h2 Если Вы заинтересованы в <span>быстрой монетизации</span> <br> долга — за консультацией обратитесь в наш <br>Инвестиционный комитет по номеру <span>8 (495) 369-22-44</span>
+				div.sale-of-debt-section__feedback.row.flex-column.flex-lg-row.flex-xl-row.justify-content-center.align-items-center
+					div.col-lg-6.d-flex.justify-content-center.justify-content-lg-end.justify-content-xl-end
+						div.col-lg-8
+							a(href="#").btn.btn-block.btn-secondary(data-toggle="modal", data-target="#feedbackModal") Оставить заявку
+					div.col-lg-6.d-flex.justify-content-center.justify-content-lg-start.justify-content-xl-start
+						div
+							a(href="#", data-toggle="modal", data-target="#callModal").sale-of-debt-section__feedback-link Заказать обратный звонок
+		//- SALE OF DEBT SECTION
+
+		//- CALCULATOR SECTION
+		section.calculator-section
+			div.container
+				div.calculator-section__caption.d-flex.flex-column.justify-content-center.align-items-center
+					div
+						h2
+							span Воспользуйтесь калькулятором для расчета стоимости долга
+				div.row
+					div.col-lg-6
+						div.d-flex.flex-column
+							div.calculator-section__block-title
+								h5 Укажите сумму основного долга в рублях
+							div.d-flex.justify-content-between.align-items-center
+								div.calculator-section__block-minus#sum_debt_minus
+								div.calculator-section__block-count
+									div#sum_debt_result 3000000
+								div.calculator-section__block-plus#sum_debt_plus
+							div.calculator-section__block-slider
+								div.d-flex.justify-content-between
+									div
+										p 3 000 000
+									div
+										p 100 000 000
+								div
+									input(type="text", id="sum_debt" data-slider-id="sumDebt", data-slider-min="3000000", data-slider-max="100000000", data-slider-value="3000000")
+				div.row
+					div.col-12
+						div.calculator-section__block-title
+							h5 Укажите размер санкций, подлежащих взысканию 
+					div.col-lg-6
+						div.calculator-section__block-subtitle
+							h6 Штрафы
+						div.d-flex.flex-column
+							div.d-flex.justify-content-between.align-items-center
+								div.calculator-section__block-minus#sum_fines_minus
+								div.calculator-section__block-count
+									div#sum_fines_result 3000000
+								div.calculator-section__block-plus#sum_fines_plus
+							div.calculator-section__block-slider
+								div.d-flex.justify-content-between
+									div
+										p 3 000 000
+									div
+										p 100 000 000
+								div
+									input(type="text", id="sum_fines" data-slider-id="sumFines", data-slider-min="3000000", data-slider-max="100000000", data-slider-value="3000000")
+					div.col-lg-6
+						div.calculator-section__block-subtitle
+							h6 Пени
+						div.d-flex.flex-column
+							div.d-flex.justify-content-between.align-items-center
+								div.calculator-section__block-minus#sum_surcharge_minus
+								div.calculator-section__block-count
+									div#sum_surcharge_result 100000
+								div.calculator-section__block-plus#sum_surcharge_plus
+							div.calculator-section__block-slider
+								div.d-flex.justify-content-between
+									div
+										p 100 000
+									div
+										p 100 000 000
+								div
+									input(type="text", id="sum_surcharge" data-slider-id="sumSurcharge", data-slider-min="100000", data-slider-max="100000000", data-slider-value="100000")
+				div.row
+					div.col-12
+						div.calculator-section__block-title.calculator-section__block-title_yellow
+							h5 Укажите платежеспособность должника
+					div.col.calculator-section__checkbox.d-flex.flex-column.justify-content-between
+						div
+							p Низкая
+						div
+							input.solvency(type="radio", id="debtor-1", name="debtor", value="0")
+							label(for="debtor-1")
+					div.col.calculator-section__checkbox.d-flex.flex-column.justify-content-between
+						div
+							p Скорее низкая
+						div
+							input.solvency(type="radio", id="debtor-2", name="debtor", value="0.2", checked)
+							label(for="debtor-2")
+					div.col.calculator-section__checkbox.d-flex.flex-column.justify-content-between
+						div
+							p Средняя
+						div
+							input.solvency(type="radio", id="debtor-3", name="debtor", value="0.4")
+							label(for="debtor-3")
+					div.col.calculator-section__checkbox.d-flex.flex-column.justify-content-between
+						div
+							p Скорее средняя
+						div
+							input.solvency(type="radio", id="debtor-4", name="debtor", value="0.6")
+							label(for="debtor-4")
+					div.col.calculator-section__checkbox.d-flex.flex-column.justify-content-between
+						div
+							p Высокая
+						div
+							input.solvency(type="radio", id="debtor-5", name="debtor", value="0.8")
+							label(for="debtor-5")
+				div.calculator-section__calculate-btn.row.flex-column.flex-lg-row.flex-xl-row.justify-content-center.align-items-center
+					div.col-lg-6.d-flex.flex-lg-row.flex-xl-row.flex-column.justify-content-center.justify-content-lg-end.justify-content-xl-end
+						div.col-xl-8
+							a(href="#").btn.btn-block.btn-secondary#sum_calculate Рассчитать стоимость долга
+					div.col-lg-6.d-flex.justify-content-center.justify-content-lg-start.justify-content-xl-start.aling-items-center
+						div
+							span.calculator-section__calculate-result#sum_result <span>38 706</span> руб.
+				div.calculator-section__notification
+					div.row
+						div.col-xl-10.offset-xl-1
+							div.d-flex.justify-content-start
+								div.calculator-section__exclamation-mark
+								div.calculator-section__exclamation-text
+									p Обращаем ваше внимание, что сумма, полученная в калькуляторе - <br>предварительная и может измениться
+									p Для точного расчета оставьте заявку, кликнув на кнопку ниже
+								div.calculator-section__exclamation-arrow
+						div.col-xl-10.offset-xl-1
+							div.d-flex.flex-lg-row.flex-xl-row.flex-column.justify-content-between.align-items-lg-center.align-items-xl-center.align-items-stretch
+								div.calculator-section__notification-text
+									p Так вы будете уверены что стоимость долга рассчитана верно
+								div.calculator-section__notification-btn
+									button.btn.btn-block.btn-secondary(data-toggle="modal", data-target="#emailModal") Получить расчет от специалиста
+							
+		//- CALCULATOR SECTION
+
+		//- GET NOW SECTION
+		section.get-now-section
+			div.container
+				div.get-now-section__block.row
+					div.get-now-section__caption.col-xl-7.col-lg-6
+						h2 Получив сейчас часть долга и пустив эти средств в оборот, ваша компания  <span>заработает больше</span>, чем бесконечно ждать возврат полного долга
+					div.get-now-section__feedback.col.d-flex.justify-content-end.align-items-center
+						div.col-xl-9.col-lg-10
+							a(href="#").btn.btn-block.btn-secondary(data-toggle="modal", data-target="#emailModal") Рассчитать стоимость долга
+				div.get-now-section__block.row
+					div.get-now-section__caption.col-lg-7.d-flex.flex-column.justify-content-between
+						div
+							h2 Рассмотрите <span>другие способы</span> возврата денег, если вам не подходят условия продажи долга
+						div.get-now-section__feedback.row
+							div.col-xl-7.col-lg-8
+								a(href="#").btn.btn-block.btn-secondary(data-toggle="modal", data-target="#feedbackModal") Оставить заявку
+					div.get-now-section__text.col
+						p Если вы решили не продавать нам принадлежащее вам право требования, но не хотели бы брать на себя бремя финансирования и сопровождения судебного разбирательства - получите финансирование от лидера рынка 
+						p <span>судебного финансирования России.</span>
+						p Мы предоставляем безвозвратное финансирование всех судебных расходов в обмен на долю в будущем взыскании. 
+		//- GET NOW SECTION
+
+		//- COMMITTEE PERSONS SECTION
+		section.committee-persons-section
+			div.container
+				div.committee-persons-section__caption.d-flex.flex-column.justify-content-center.align-items-center
+					div
+						h2
+							span Состав Инвестиционного комитета 
+				div.committee-persons-section__cards.row
+					div.col-lg-4.committee-persons-section__card
+						div.card
+							div.card-body
+								div.card-img
+									img.img-fluid(src="img/person-1.png", alt="")
+								h5.card-title Максим Карпов
+								h6.card-subtitle Управляющий партнер, CEO
+								div.card-text.collapse#descriptionDetails-1.animated.fadeIn
+									p Серийный предприниматель и инвестор, кандидат юридических наук.
+									p Возглавлял юридическую службу крупных промышленных и транспортных компаний (специализированный морской порт в Новороссийске, крупный лесозаготовительный и лесоперерабатывающий холдинг и т.д.).
+									p В настоящий момент, помимо участия в деятельности NLF group, является управляющим партнером и СЕО группы компаний, специализирующейся на инвестициях в недвижимость, производственные активы и проекты, содействующие увеличению капитализации недвижимого имущества.
+									p Автор многочисленных публикаций (в т.ч. монографии) по проблематике гражданского права, развития предпринимательства и инноваций в т.ч. в таких изданиях, как Financial Times, Forbes, РБК, Коммерсант, Российская Газета, Известия. 
+								div.card-btn.text-lg-left.text-center
+									a.descriptionDetails(href="#descriptionDetails-1",data-toggle="collapse",aria-expanded="false",aria-controls="descriptionDetails-1") Подробнее 
+					div.col-lg-4.committee-persons-section__card
+						div.card
+							div.card-body
+								div.card-img
+									img.img-fluid(src="img/person-2.png", alt="")
+								h5.card-title Анатолий Сафонов
+								h6.card-subtitle Управляющий партнер
+								div.card-text.collapse#descriptionDetails-2.animated.fadeIn
+									p Входил в советы директоров и руководил операционной деятельностью крупных нефтегазодобывающих компаний и специализированным морским портом в Новороссийске.
+									p В течение многих лет являлся управляющим партнером одного из крупнейших в России лесозаготовительных и лесоперерабатывающих холдингов.
+									p В настоящий момент, помимо участия в деятельности NLF group, является управляющим партнером и председателем совета директоров группы компаний, специализирующейся на инвестициях в недвижимость, производственные активы и проекты, содействующие увеличению капитализации недвижимого имущества.
+								div.card-btn.text-lg-left.text-center
+									a.descriptionDetails(href="#descriptionDetails-2",data-toggle="collapse",aria-expanded="false",aria-controls="descriptionDetails-2") Подробнее 
+					div.col-lg-4.committee-persons-section__card
+						div.card
+							div.card-body
+								div.card-img
+									img.img-fluid(src="img/person-3.png", alt="")
+								h5.card-title Юрий Еременко
+								h6.card-subtitle Управляющий партнер
+								div.card-text.collapse#descriptionDetails-3.animated.fadeIn
+									p Входил в советы директоров и занимал руководящие позиции в рамках крупнейших розничных сетей, специализирующихся на торговле электроникой и бытовой техникой
+									p В настоящий момент является соучредителем, членом советов директоров и управляющим партнёром нескольких проектов в сфере розничной торговли и e-commerce. Обладает большим опытом в выстраивании операционных процессов.
+									p Помимо инвестиционной деятельности в рамках NLF-group, выступает инвестором в проектах, связанных с ритейлом.
+								div.card-btn.text-lg-left.text-center
+									a.descriptionDetails(href="#descriptionDetails-3",data-toggle="collapse",aria-expanded="false",aria-controls="descriptionDetails-3") Подробнее 
+		//- COMMITTEE PERSONS SECTION
+
+		//- WHY WE SECTION
+		section.why-we-section
+			div.container
+				div.why-we-section__caption.d-flex.flex-column.justify-content-center.align-items-center
+					div
+						h2
+							span Почему стоит обратиться к нам
+				div.why-we-section__cards.row
+					div.col-lg-6.why-we-section__item
+						div.card.card_white
+							div.card-body
+								div.col
+									h5.card-title Решения для юридических компаний
+								div.col
+									div.card-text
+										p Привлечение NLF Group в качестве партнера позволит не только получить новых клиентов, но и даст возможность сохранить сомневающихся или отказавшихся от защиты своих интересов из-за дороговизны или поражения на определенной стадии.
+										p Привлекая правового инвестора в лице NLF Group, адвокаты и юридические компании могут снять зависи мость от клиентских денежных поступлений, привязанных к исходу судебного разбирательства.
+					div.col-lg-6.why-we-section__item
+						div.card.card_dark
+							div.card-body
+								div.col
+									h5.card-title Решения для бизнеса
+								div.col
+									div.card-text
+										p Сложные правовые ситуации требуют дорогостоящих мероприятий, конечная сумма затрат и сроки проектов трудно прогнозируемы.Правовое финансирование - механизм, с помощью которого можно разделить или полностью снять с себя указанные риски.
+										p Инвестиционные продукты NLF Group позволяют существенно сократить или полностью исключить корпоративные расходы на судебные издержки.
+				div.why-we-section__blocks.row
+					div.col-lg-4.col-md-6.why-we-section__block
+						div.why-we-section__card
+							div.col-12.why-we-section__blocks-img
+								img.img-fluid(src="img/people-icon.png", alt="")
+							div.col-12.why-we-section__blocks-title
+								h5 Мы подберем и оплатим команду юристу, обладающих необходимым опытом и квалификацией для представления ваших интересов в суде 
+							div.col-12.why-we-section__blocks-text
+								p и будем вместе с вами контролировать качество их услуг и занимаемой ими правовой позиции
+					div.col-lg-4.col-md-6.why-we-section__block
+						div.why-we-section__card
+							div.col-12.why-we-section__blocks-img
+								img.img-fluid(src="img/document-icon.png", alt="")
+							div.col-12.why-we-section__blocks-title
+								h5 Мы принимаем на себя риски негативного исхода судебного разбирательства 
+							div.col-12.why-we-section__blocks-text
+								p в полном размере совершенных нами инвестиций – мы зарабатываем, только если зарабатываете вы.
+					div.col-lg-4.col-md-6.why-we-section__block
+						div.why-we-section__card
+							div.col-12.why-we-section__blocks-img
+								img.img-fluid(src="img/sliders-icon.png", alt="")
+							div.col-12.why-we-section__blocks-title
+								h5 Мы стараемся быть максимально гибкими 
+							div.col-12.why-we-section__blocks-text
+								p В каждом случае мы предоставляем нашим партнерам индивидуальный инвестиционный продукт, учитывающий особенности проекта, сроки возврата инвестиции и нашу оценку правовых и экономических рисков.
+					div.col-lg-4.col-md-6.why-we-section__block
+						div.why-we-section__card
+							div.col-12.why-we-section__blocks-img
+								img.img-fluid(src="img/book-icon.png", alt="")
+							div.col-12.why-we-section__blocks-title
+								h5 Основной критерий оценки проекта – 
+							div.col-12.why-we-section__blocks-text
+								p понимание того, что он будет успешным для нас и наших клиентов. Кроме того, мы уделяем большое внимание юридической чистоте спорных правоотношений, имея в виду неприемлемость нашего участия в реализации сомнительных схем и операций.
+					div.col-lg-4.col-md-6.why-we-section__block
+						div.why-we-section__card
+							div.col-12.why-we-section__blocks-img
+								img.img-fluid(src="img/expertise-icon.png", alt="")
+							div.col-12.why-we-section__blocks-title
+								h5 Правовая экспертиза заявки
+							div.col-12.why-we-section__blocks-text
+								p Перед принятием решения о предоставлении финансирования ваша заявка проходит несколько стадий правовой экспертизы. Одобрение заявки является «гарантией качества» и показателем того, что клиент имеет высокие шансы на успех в суде.
+					div.col-lg-4.col-md-6.why-we-section__block
+						div.why-we-section__card
+							div.col-12.why-we-section__blocks-img
+								img.img-fluid(src="img/clock-icon.png", alt="")
+							div.col-12.why-we-section__blocks-title
+								h5 Мы готовы идти с вами до конца
+							div.col-12.why-we-section__blocks-text
+								p Отстоять позицию и получить судебное решение в вашу пользу не значит завершить спор. Мы не только привлечем к защите ваших интересов высококлассных юристов, но и обеспечим организационную поддержку инициированного спора на всех стадиях конфликта – вплоть до поиска активов для обращения взыскания на стадии исполнительного производства. 
+				div.why-we-section__feedback.row.flex-column.flex-lg-row.flex-xl-row.justify-content-center.align-items-center
+					div.col-lg-6.d-flex.justify-content-center.justify-content-lg-end.justify-content-xl-end
+						div.col-lg-8
+							a(href="#").btn.btn-block.btn-secondary(data-toggle="modal", data-target="#feedbackModal") Оставить заявку
+					div.col-lg-6.d-flex.justify-content-center.justify-content-lg-start.justify-content-xl-start
+						div
+							a(href="#").why-we-section__feedback-link(data-toggle="modal", data-target="#callModal") Заказать обратный звонок
+		//- WHY WE SECTION
+
+		//- FOOTER SECTION
+		section.footer-section
+			div.container
+				div.row
+					div.col-lg-4
+						div.footer-section__questions-block
+							h2.footer-section__questions-block-title Если у Вас остались вопросы
+							div.footer-section__questions-block-contacts
+								div.d-flex
+									div.footer-section__questions-block-contacts-link
+										a(href="mailto:sv@nfl-group.ru") пишите
+									div.footer-section__questions-block-contacts-text
+										p sv@nfl-group.ru
+								div.d-flex
+									div.footer-section__questions-block-contacts-link
+										a(href="tel:84953692244") звоните
+									div.footer-section__questions-block-contacts-text
+										p 8 (495) 369 22 44
+					div.col-lg-4.offset-lg-4
+						div.footer-section__form
+							h2.footer-section__form-title Подпишитесь на нашу рассылку новостей
+							div.footer-section__form-text
+								p Вы будете получать самые свежие предложения и информацию о мероприятиях
+							div
+								form(method="post", action="/mail.php")
+									div.form-group
+										input.form-control(type="email", name="email", placeholder="*Электронная почта",required)
+										input(type="hidden", name="subject", value="Подписка на рассылку")
+									div.form-group
+										button(type="submit").btn.btn-block.btn-secondary Подписаться
+									div.footer-section__form-agree
+										p *Нажимая на кнопку, я соглашаюсь с Политикой конфиденциальности
+				div.row.footer-section__navbar
+					nav.navbar.navbar-expand-lg.navbar-light.d-flex.flex-row.justify-content-lg-between.justify-content-xl-between.justify-content-center
+						div
+							a.navbar-brand(href="#")
+								img(src="img/header-logo.png", alt="")
+							button.navbar-toggler(type="button", data-toggle="collapse", data-target="#footerNavbar", aria-controls="footerNavbar", aria-expanded="false", aria-label="Toggle navigation") &#9776;
+						div.collapse.navbar-collapse#footerNavbar.d-lg-flex.justify-content-end
+							ul.navbar-nav
+								li.nav-item
+									a.nav-link(href="#") Схема работы 
+								li.nav-item
+									a.nav-link(href="#") Критерии заявки
+								li.nav-item
+									a.nav-link(href="#") Расчет стоимости
+								li.nav-item
+									a.nav-link(href="#") Инвестиционный комитет
+				div.row.d-lg-flex.justify-content-between.footer-section__block
+					div.col-lg-2.col-sm-6.d-flex.justify-content-center.justify-content-sm-start
+						ul.list-unstyled.footer-section__list
+							li +7 (495) 369-22-44
+							li info@nlf-group.ru
+							li г. Москва, ул. Шухова, д. 14
+					div.col-lg-2.col-sm-6.flex-grow-1.d-flex.justify-content-center.justify-content-sm-start
+						ul.list-unstyled.footer-section__links
+							li
+								a(href="#") Главный сайт
+							li
+								a(href="#") Фейсбук
+					div.col-lg-8.col-md-12.flex-grow-1
+						div.footer-section__form
+							div
+								form(method="post", action="/mail.php")
+									div.row.d-flex.justify-content-between
+										div.col-lg-6.form-group.flex-1
+											input.form-control.form-control_dark-color(type="tel", name="phone", placeholder="+7(___)___ __ __",required)
+											input(type="hidden", name="subject", value="Заказ обратного звонка")
+										div.col-lg-6.form-group.flex-1
+											button(type="submit").btn.btn-block.btn-secondary Заказать обратный звонок
+				div.row.footer-section__copyright
+					div.col-lg-6.offset-lg-3.d-flex.justify-content-center.align-items-center
+						div
+							p &copy; Copyright NLF Group
+		//- FOOTER SECTION
+
+		//- FEEDBACK MODAL
+		div.modal.fade.feedback-modal#callModal(tabindex="1", role="dialog", aria-labelledby="callModalLabel", aria-hidden="true")
+			div.modal-dialog(role="document")
+				div.modal-content
+					div.modal-body
+						div.card
+							div.card-body
+								div.feedback-modal__form
+									div.feedback-modal__form-text
+										p Оставьте ваш номер телефона и мы с вами свяжемся в течении 10 минут
+									div
+										form(method="post", action="/mail.php")
+											div.form-group
+												input.form-control(type="text", name="name", placeholder="*Имя")
+											div.form-group
+												input.form-control(type="tel", name="phone", placeholder="+7(___)___ __ __", required)
+												input(type="hidden", name="subject", value="Заказ обратного звонка")
+											div.form-group
+												button.btn.btn-block.btn-secondary Жду звонка
+											div.feedback-modal__form-agree
+												p *Нажимая на кнопку, я соглашаюсь с Политикой конфиденциальности
+		div.modal.fade.feedback-modal#feedbackModal(tabindex="1", role="dialog", aria-labelledby="calculationModalLabel", aria-hidden="true")
+			div.modal-dialog(role="document")
+				div.modal-content
+					div.modal-body
+						div.card
+							div.card-body
+								div.feedback-modal__form
+									div.feedback-modal__form-text
+										p Оставьте заявку, с вами свяжется представитель компании и рассчитает точную стоимость в течение 24 часов
+									div
+										form(method="post", action="/mail.php")
+											div.form-group
+												input.form-control(type="text", name="name" ,placeholder="*Имя")
+											div.form-group
+												input.form-control(type="tel", name="phone", placeholder="*Номер телефона", required)
+											div.form-group
+												input.form-control(type="email", name="email", placeholder="*e-mail", required)
+												input(type="hidden", name="subject", value="Заявка")
+											div.form-group
+												button.btn.btn-block.btn-secondary Оставляю заявку
+											div.feedback-modal__form-agree
+												p *Нажимая на кнопку, я соглашаюсь с Политикой конфиденциальности
+		div.modal.fade.feedback-modal#emailModal(tabindex="1", role="dialog", aria-labelledby="emailModalLabel", aria-hidden="true")
+			div.modal-dialog(role="document")
+				div.modal-content
+					div.modal-body
+						div.card
+							div.card-body
+								div.feedback-modal__form
+									div.feedback-modal__form-text
+										p Оставьте вашу электронную почту и мы вышлем точный расчет
+									div
+										form(method="post", action="/mail.php")
+											div.form-group
+												input.form-control(type="text", name="name" ,placeholder="*Имя")
+											div.form-group
+												input.form-control(type="email", name="email", placeholder="*e-mail", required)
+												input(type="hidden", name="subject", value="Запрос на расчет стоимости долга")
+											div.form-group
+												button(type="submit").btn.btn-block.btn-secondary Хочу расчет
+											div.feedback-modal__form-agree
+												p *Нажимая на кнопку, я соглашаюсь с Политикой конфиденциальности
+		div.feedback-modal__success.alert.alert-success.animated.slideInDown Письмо отправлено
+		div.feedback-modal__error.alert.alert-danger.animated.slideInDown Ошибка - письмо не отправлено
+		//- FEEDBACK MODAL
+
+		script(type="text/javascript", src="js/jquery-3.3.1.min.js")
+		script(type="text/javascript", src="js/bootstrap.min.js")
+		script(type="text/javascript", src="owl.carousel/dist/owl.carousel.min.js")
+		script(type="text/javascript", src="js/bootstrap-slider.min.js")
+		script(type="text/javascript", src="js/main.js")
